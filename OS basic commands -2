@@ -1,0 +1,103 @@
+[student@PC-16 ~]$ cat > names
+xyz
+abc
+pqr
+[student@PC-16 ~]$ sort names
+abc
+pqr
+xyz
+[student@PC-16 ~]$ cat > nos
+9
+3
+7
+[student@PC-16 ~]$ sort -n nos
+3
+7
+9
+[student@PC-16 ~]$ sort -nr nos
+9
+7
+3
+[student@PC-16 ~]$ sort -r names
+xyz
+pqr
+abc
+[student@PC-16 ~]$ sort -c names
+sort: names:2: disorder: abc
+
+[student@PC-16 ~]$ cat > hi
+3
+7
+9
+[student@PC-16 ~]$ sort -cn hi
+[student@PC-16 ~]$ cat  > data
+shobha|coa|se|cmpn
+pradnya|os|se|cmpn
+tejal|spa|fe|it
+pallavi|bee|fe|extc
+ankita|spcc|te|it
+[student@PC-16 ~]$ sort data
+ankita|spcc|te|it
+pallavi|bee|fe|extc
+pradnya|os|se|cmpn
+shobha|coa|se|cmpn
+tejal|spa|fe|it
+
+[student@PC-16 ~]$ sort -t '|' –k2 data
+pallavi|bee|fe|extc
+shobha|coa|se|cmpn
+pradnya|os|se|cmpn
+tejal|spa|fe|it
+ankita|spcc|te|it
+
+[student@PC-16 ~]$ grep 'shobha' data
+shobha|coa
+
+[student@PC-16 ~]$ grep 'Shobha' data
+
+[student@PC-16 ~]$ grep -i 'Shobha' data
+shobha|coa
+
+[student@PC-16 ~]$ grep -e 'fe' -e 'extc' data
+pallavi|bee|fe|extc
+tejal|spa|fe|it
+
+
+[student@PC-16 ~]$ grep -c data
+0
+[student@PC-16 ~]$ grep -c 'fe' data
+2
+
+[student@PC-16 ~]$ grep -v 'fe' data
+shobha|coa|se|cmpn
+pradnya|os|se|cmpn
+ankita|spcc|te|it
+
+[student@PC-16 ~]$ grep -n 'coa' data
+1:shobha|coa
+
+[student@PC-16 ~]$ awk '/extc/'{print} data
+pallavi|bee|fe|extc
+
+[student@PC-16 ~]$ awk -F '|' 'NR==3'{print} data
+tejal|spa|fe|it
+
+[student@PC-16 ~]$ awk -F '|' 'NR==3{print $2}' data
+it
+
+[student@PC-16 ~]$ awk -F '|' '$2=="bee" || $2=="spcc"{print}' data
+pallavi|bee|fe|extc
+ankita|spcc|te|it
+
+[student@PC-16 ~]$ awk -F '|' '/^t/{print}' data
+tejal|spa|fe|it
+[student@PC-16 ~]$ awk -F '|' '/n$/{print}' data
+shobha|coa|se|cmpn
+pradnya|os|se|cmpn
+[student@PC-16 ~]$ awk -F '|' '$2~/^s/{print}' data
+tejal|spa|fe|it
+ankita|spcc|te|it
+[student@PC-16 ~]$ awk -F '|' '$2~/s$/{print}' data
+pradnya|os|se|cmpn
+
+
