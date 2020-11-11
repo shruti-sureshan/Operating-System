@@ -1,0 +1,267 @@
+shobha|coa|se|cmpn
+pradnya|os|se|cmpn
+tejal|spa|fe|it
+pallavi|bee|fe|extc
+ankita|spcc|te|it
+[student@PC-21 ~]$ cp Data Desktop
+[student@PC-21 ~]$ ls Desktop
+Data
+[student@PC-21 ~]$ cp Data Sec
+[student@PC-21 ~]$ cat Sec
+shobha|coa|se|cmpn
+pradnya|os|se|cmpn
+tejal|spa|fe|it
+pallavi|bee|fe|extc
+ankita|spcc|te|it
+[student@PC-21 ~]$ cp Data first
+[student@PC-21 ~]$ cat first
+shobha|coa|se|cmpn
+pradnya|os|se|cmpn
+tejal|spa|fe|it
+pallavi|bee|fe|extc
+ankita|spcc|te|it
+[student@PC-21 ~]$ clear
+
+[student@PC-21 ~]$ ls
+Data     Documents  Faculty  Music     Public  Templates
+Desktop  Downloads  first    Pictures  Sec     Videos
+[student@PC-21 ~]$ ls Pictures
+[student@PC-21 ~]$ ls Student
+ls: cannot access Student: No such file or directory
+[student@PC-21 ~]$ mv Data Pictures
+[student@PC-21 ~]$ ls
+Desktop    Downloads  first  Pictures  Sec        Videos
+Documents  Faculty    Music  Public    Templates
+[student@PC-21 ~]$ ls Pictures
+Data
+[student@PC-21 ~]$ mv first CMPN
+[student@PC-21 ~]$ ls
+CMPN     Documents  Faculty  Pictures  Sec        Videos
+Desktop  Downloads  Music    Public    Templates
+[student@PC-21 ~]$ mkdir SEB
+[student@PC-21 ~]$ ls
+CMPN     Documents  Faculty  Pictures  SEB  Templates
+Desktop  Downloads  Music    Public    Sec  Videos
+[student@PC-21 ~]$ mv SEB second_year
+[student@PC-21 ~]$ ls
+CMPN     Documents  Faculty  Pictures  Sec          Templates
+Desktop  Downloads  Music    Public    second_year  Videos
+[student@PC-21 ~]$ rm first
+rm: cannot remove ‘first’: No such file or directory
+[student@PC-21 ~]$ rm second_year
+rm: cannot remove ‘second_year’: Is a directory
+[student@PC-21 ~]$ rm CMPN
+[student@PC-21 ~]$ ls
+Desktop    Downloads  Music     Public  second_year  Videos
+Documents  Faculty    Pictures  Sec     Templates
+[student@PC-21 ~]$ cat >>Faculty
+linux is an OS
+operating systems
+[student@PC-21 ~]$ cat Faculty
+shobha|coa|se|cmpn
+pradnya|os|se|cmpn
+tejal|spa|fe|it
+pallavi|bee|fe|extc
+ankita|spcc|te|it
+linux is an OS
+operating systems
+[student@PC-21 ~]$ cat Faculty Sec > New
+[student@PC-21 ~]$ cat New
+shobha|coa|se|cmpn
+pradnya|os|se|cmpn
+tejal|spa|fe|it
+pallavi|bee|fe|extc
+ankita|spcc|te|it
+linux is an OS
+operating systems
+shobha|coa|se|cmpn
+pradnya|os|se|cmpn
+tejal|spa|fe|it
+pallavi|bee|fe|extc
+ankita|spcc|te|it
+[student@PC-21 ~]$ who
+student  tty2         2018-01-22 23:35 (:1)
+student  pts/0        2018-01-22 23:35 (:1)
+[student@PC-21 ~]$ who
+student  tty2         2018-01-22 23:35 (:1)
+student  pts/0        2018-01-22 23:35 (:1)
+[student@PC-21 ~]$ who
+student  tty2         2018-01-22 23:35 (:1)
+student  pts/0        2018-01-22 23:35 (:1)
+student  pts/1        2018-01-23 00:25 (:1)
+[student@PC-21 ~]$ who -H
+NAME     LINE         TIME             COMMENT
+student  tty2         2018-01-22 23:35 (:1)
+student  pts/0        2018-01-22 23:35 (:1)
+student  pts/1        2018-01-23 00:25 (:1)
+[student@PC-21 ~]$ who -b
+         system boot  2018-01-23 05:04
+[student@PC-21 ~]$ who -u
+student  tty2         2018-01-22 23:35  old         1581 (:1)
+student  pts/0        2018-01-22 23:35  old         2219 (:1)
+student  pts/1        2018-01-23 00:25  old         2219 (:1)
+[student@PC-21 ~]$ who -Hb
+NAME     LINE         TIME                    PID COMMENT
+         system boot  2018-01-23 05:04
+[student@PC-21 ~]$ who am i
+student  pts/0        2018-01-22 23:35 (:1)
+[student@PC-21 ~]$ cal
+    January 2018    
+Su Mo Tu We Th Fr Sa
+    1  2  3  4  5  6 
+ 7  8  9 10 11 12 13 
+14 15 16 17 18 19 20 
+21 22 23 24 25 26 27 
+28 29 30 31          
+                     
+[student@PC-21 ~]$ cal 02 1999
+    February 1999   
+Su Mo Tu We Th Fr Sa
+    1  2  3  4  5  6 
+ 7  8  9 10 11 12 13 
+14 15 16 17 18 19 20 
+21 22 23 24 25 26 27 
+28                   
+                     
+[student@PC-21 ~]$ cal 1999
+                               1999                               
+
+       January               February                 March       
+Su Mo Tu We Th Fr Sa   Su Mo Tu We Th Fr Sa   Su Mo Tu We Th Fr Sa
+                1  2       1  2  3  4  5  6       1  2  3  4  5  6   
+ 3  4  5  6  7  8  9    7  8  9 10 11 12 13    7  8  9 10 11 12 13   
+10 11 12 13 14 15 16   14 15 16 17 18 19 20   14 15 16 17 18 19 20   
+17 18 19 20 21 22 23   21 22 23 24 25 26 27   21 22 23 24 25 26 27   
+24 25 26 27 28 29 30   28                     28 29 30 31            
+31                                                                   
+        April                   May                   June        
+Su Mo Tu We Th Fr Sa   Su Mo Tu We Th Fr Sa   Su Mo Tu We Th Fr Sa
+             1  2  3                      1          1  2  3  4  5   
+ 4  5  6  7  8  9 10    2  3  4  5  6  7  8    6  7  8  9 10 11 12   
+11 12 13 14 15 16 17    9 10 11 12 13 14 15   13 14 15 16 17 18 19   
+18 19 20 21 22 23 24   16 17 18 19 20 21 22   20 21 22 23 24 25 26   
+25 26 27 28 29 30      23 24 25 26 27 28 29   27 28 29 30            
+                       30 31                                         
+        July                  August                September     
+Su Mo Tu We Th Fr Sa   Su Mo Tu We Th Fr Sa   Su Mo Tu We Th Fr Sa
+             1  2  3    1  2  3  4  5  6  7             1  2  3  4   
+ 4  5  6  7  8  9 10    8  9 10 11 12 13 14    5  6  7  8  9 10 11   
+11 12 13 14 15 16 17   15 16 17 18 19 20 21   12 13 14 15 16 17 18   
+18 19 20 21 22 23 24   22 23 24 25 26 27 28   19 20 21 22 23 24 25   
+25 26 27 28 29 30 31   29 30 31               26 27 28 29 30         
+                                                                     
+       October               November               December      
+Su Mo Tu We Th Fr Sa   Su Mo Tu We Th Fr Sa   Su Mo Tu We Th Fr Sa
+                1  2       1  2  3  4  5  6             1  2  3  4   
+ 3  4  5  6  7  8  9    7  8  9 10 11 12 13    5  6  7  8  9 10 11   
+10 11 12 13 14 15 16   14 15 16 17 18 19 20   12 13 14 15 16 17 18   
+17 18 19 20 21 22 23   21 22 23 24 25 26 27   19 20 21 22 23 24 25   
+24 25 26 27 28 29 30   28 29 30               26 27 28 29 30 31      
+31                                                                   
+
+[student@PC-21 ~]$ cal -3
+    December 2017         January 2018          February 2018   
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
+                1  2      1  2  3  4  5  6               1  2  3 
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   4  5  6  7  8  9 10 
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  11 12 13 14 15 16 17 
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  18 19 20 21 22 23 24 
+24 25 26 27 28 29 30  28 29 30 31           25 26 27 28          
+31                                                               
+[student@PC-21 ~]$ cal -3
+    December 2017         January 2018          February 2018   
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
+                1  2      1  2  3  4  5  6               1  2  3 
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   4  5  6  7  8  9 10 
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  11 12 13 14 15 16 17 
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  18 19 20 21 22 23 24 
+24 25 26 27 28 29 30  28 29 30 31           25 26 27 28          
+31                                                               
+[student@PC-21 ~]$ cal -3 10 2005
+   September 2005         October 2005          November 2005   
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
+             1  2  3                     1         1  2  3  4  5 
+ 4  5  6  7  8  9 10   2  3  4  5  6  7  8   6  7  8  9 10 11 12 
+11 12 13 14 15 16 17   9 10 11 12 13 14 15  13 14 15 16 17 18 19 
+18 19 20 21 22 23 24  16 17 18 19 20 21 22  20 21 22 23 24 25 26 
+25 26 27 28 29 30     23 24 25 26 27 28 29  27 28 29 30          
+                      30 31                                      
+[student@PC-21 ~]$ man date
+[student@PC-21 ~]$ date +%A
+Tuesday
+[student@PC-21 ~]$ cut -d '|' -f4 Data
+cut: Data: No such file or directory
+[student@PC-21 ~]$ cut -d '|' -f4 Sec
+cmpn
+cmpn
+it
+extc
+it
+[student@PC-21 ~]$ cut -d '|' -f2,4 Sec
+coa|cmpn
+os|cmpn
+spa|it
+bee|extc
+spcc|it
+[student@PC-21 ~]$ cut -d '|' -f2-4 Sec
+coa|se|cmpn
+os|se|cmpn
+spa|fe|it
+bee|fe|extc
+spcc|te|it
+[student@PC-21 ~]$ ls -l Sec
+-rw-rw-r--. 1 student student 92 Jan 22 23:53 Sec
+[student@PC-21 ~]$ ls -s Sec SecC
+ls: cannot access SecC: No such file or directory
+4 Sec
+[student@PC-21 ~]$ LS
+bash: LS: command not found...
+Similar command is: 'ls'
+[student@PC-21 ~]$ ls
+Desktop    Downloads  Music  Pictures  Sec          Templates
+Documents  Faculty    New    Public    second_year  Videos
+[student@PC-21 ~]$ ls -l
+total 48
+drwxr-xr-x. 2 student student 4096 Jan 23 00:34 Desktop
+drwxr-xr-x. 2 student student 4096 Jan 21 02:46 Documents
+drwxr-xr-x. 2 student student 4096 Jan 21 02:46 Downloads
+-rw-rw-r--. 1 student student  125 Jan 23 00:14 Faculty
+drwxr-xr-x. 2 student student 4096 Jan 21 02:46 Music
+-rw-rw-r--. 1 student student  217 Jan 23 00:22 New
+drwxr-xr-x. 2 student student 4096 Jan 22 23:57 Pictures
+drwxr-xr-x. 2 student student 4096 Jan 21 02:46 Public
+-rw-rw-r--. 1 student student   92 Jan 22 23:53 Sec
+drwxrwxr-x. 2 student student 4096 Jan 23 00:01 second_year
+drwxr-xr-x. 2 student student 4096 Jan 21 02:46 Templates
+drwxr-xr-x. 2 student student 4096 Jan 22 23:45 Videos
+[student@PC-21 ~]$ ln -s Sec SecC
+[student@PC-21 ~]$ ls
+Desktop    Downloads  Music  Pictures  Sec   second_year  Videos
+Documents  Faculty    New    Public    SecC  Templates
+[student@PC-21 ~]$ ls -l
+total 48
+drwxr-xr-x. 2 student student 4096 Jan 23 00:34 Desktop
+drwxr-xr-x. 2 student student 4096 Jan 21 02:46 Documents
+drwxr-xr-x. 2 student student 4096 Jan 21 02:46 Downloads
+-rw-rw-r--. 1 student student  125 Jan 23 00:14 Faculty
+drwxr-xr-x. 2 student student 4096 Jan 21 02:46 Music
+-rw-rw-r--. 1 student student  217 Jan 23 00:22 New
+drwxr-xr-x. 2 student student 4096 Jan 22 23:57 Pictures
+drwxr-xr-x. 2 student student 4096 Jan 21 02:46 Public
+-rw-rw-r--. 1 student student   92 Jan 22 23:53 Sec
+lrwxrwxrwx. 1 student student    3 Jan 23 00:50 SecC -> Sec
+drwxrwxr-x. 2 student student 4096 Jan 23 00:01 second_year
+drwxr-xr-x. 2 student student 4096 Jan 21 02:46 Templates
+drwxr-xr-x. 2 student student 4096 Jan 22 23:45 Videos
+[student@PC-21 ~]$ ln -i Sec SecC
+ln: replace ‘SecC’? [student@PC-21 ~]$ 
+[student@PC-21 ~]$ ln Sec SC
+[student@PC-21 ~]$ LS -L Sec SC
+bash: LS: command not found...
+Similar command is: 'ls'
+[student@PC-21 ~]$ ls -l Sec SC
+-rw-rw-r--. 2 student student 92 Jan 22 23:53 SC
+-rw-rw-r--. 2 student student 92 Jan 22 23:53 Sec
+[student@PC-21 ~]$ ls -i Sec SC
+4325589 SC  4325589 Sec
+[student@PC-21 ~]$ 
