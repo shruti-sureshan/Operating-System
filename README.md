@@ -1,11 +1,11 @@
 # Operating-System
 
-•	Linux Commands
-•	System Call
-•	FCFS Scheduling Algorithm
-•	SJF Scheduling Algorithm
-•	Dynamic Partitioning
-•	Page Replacement Algorithm
-•	Bankers Algorithm
-•	Disk Scheduling Algorithm
+•	Linux Commands<br/>
+•	System Call<br/>
+•	FCFS Scheduling Algorithm<br/>
+•	SJF Scheduling Algorithm<br/>
+•	Dynamic Partitioning<br/>
+•	Page Replacement Algorithm<br/>
+•	Bankers Algorithm<br/>
+•	Disk Scheduling Algorithm<br/>
 •	FCFS Disk Scheduling Algorithm
