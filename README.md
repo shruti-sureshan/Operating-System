@@ -7,5 +7,5 @@
 •	Dynamic Partitioning<br/>
 •	Page Replacement Algorithm<br/>
 •	Bankers Algorithm<br/>
-•	Disk Scheduling Algorithm<br/>
-•	FCFS Disk Scheduling Algorithm
+•	Disk Scheduling Algorithm - SCAN<br/>
+•	Disk Scheduling Algorithm - FCFS
